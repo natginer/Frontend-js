@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #bc002e;
+    --black: #080808;
+    --white: #f4f4f4;
+    --app-grey: #78808e;
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+background: var(--primary);
+}
+
+h1{
+  text-align: center;
+  margin: 20px 0;
+  color: var(--white);
+}
+
+.bancaMobile{
+  background-color: var(--white);
+  color: var(--black);
+  width: 50%;
+  margin: 0 auto;
+  padding: 25px;
+  text-align: center;
+}
+button{
+  background-color: blue;
+  color: white;
+  padding: 10px 25px;
+  font-weight: bold;
+  display: block;
+  margin: 25px auto;
+}
+
+.oculto{
+  display: none;
+}
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  text-align: center;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid red;
+  border-color: red transparent red transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
